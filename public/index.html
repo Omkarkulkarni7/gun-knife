@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gun Detection</title>
+    <style>
+      #video-container {
+        text-align: center;
+      }
+      video {
+        width: 100%;
+        max-width: 640px;
+      }
+      #results {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="video-container">
+      <video id="camera-feed" autoplay playsinline></video>
+    </div>
+    <div id="results">
+      <h2>Gun Detection Results:</h2>
+      <ul id="detectionList"></ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
+    <script src="read.js"></script>
+  </body>
+</html>
